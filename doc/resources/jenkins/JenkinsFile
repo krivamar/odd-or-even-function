@@ -14,7 +14,7 @@ node {
             def RESOURCE_GROUP = '<resource_group>' 
             def FUNC_NAME = '<function_app>'
             // login Azure
-            withCredentials([usernamePassword(credentialsId: 'azuresp', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
+            withCredentials([usernamePassword(credentialsId: 'Jetkins_krivamar', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
             sh '''
                 az login --service-principal -u $AZURE_CLIENT_ID -p $AZURE_CLIENT_SECRET -t $AZURE_TENANT_ID
                 az account set -s $AZURE_SUBSCRIPTION_ID
