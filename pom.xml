@@ -48,6 +48,24 @@
             <artifactId>azure-functions-java-library</artifactId>
         </dependency>
 
+        <!-- JAXB is not included beyond JDK9+ -->
+		<!-- JAXB API -->
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+		<!-- JAXB Runtime -->
+		<dependency>
+			<groupId>org.glassfish.jaxb</groupId>
+			<artifactId>jaxb-runtime</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.microsoft.azure.functions</groupId>
+			<artifactId>azure-functions-java-library</artifactId>
+		</dependency>
+
         <!-- Test -->
         <dependency>
             <groupId>junit</groupId>
