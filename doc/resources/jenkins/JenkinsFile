@@ -13,7 +13,7 @@ node {
         stage('Publish') {
             // def RESOURCE_GROUP = '<resource_group>'
             def RESOURCE_GROUP = 'krivamar_functions'
-            def FUNC_NAME = '<function_app>'
+            def FUNC_NAME = 'krivamarfce'
             // login Azure
             withCredentials([usernamePassword(credentialsId: 'Jetkins_krivamar', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
             sh '''
