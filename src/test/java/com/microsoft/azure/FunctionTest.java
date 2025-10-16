@@ -21,9 +21,8 @@ import static org.mockito.Mockito.mock;
  * Unit test for Function class.
  */
 public class FunctionTest {
-    /**
      * Unit test for HttpTriggerJava method.
-    @Test */
+    @Test
     public void testHttpTriggerJava() throws Exception {
         // Setup
         final HttpRequestMessage<Optional<String>> req = mock(HttpRequestMessage.class);
